@@ -51,20 +51,19 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "Build";	  
-	  var version = "0.0.1"; // Increment this version number whenever you update
-		var loaderUrl = buildUrl + "/AimBuild.loader.js?v=" + version;
-		var config = {
-		  arguments: [],
-		  dataUrl: buildUrl + "/AimBuild.data?v=" + version,
-		  frameworkUrl: buildUrl + "/AimBuild.framework.js?v=" + version,
-		  codeUrl: buildUrl + "/AimBuild.wasm?v=" + version,
-		  streamingAssetsUrl: "StreamingAssets",
-		  companyName: "stVALVe",
-		  productName: "Aim",
-		  productVersion: "0.0.1",
-		  showBanner: unityShowBanner,
-		};
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/AimDevBuild.loader.js";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/AimDevBuild.data.gz",
+        frameworkUrl: buildUrl + "/AimDevBuild.framework.js.gz",
+        codeUrl: buildUrl + "/AimDevBuild.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "stVALVe",
+        productName: "Aim",
+        productVersion: "0.0.1",
+        showBanner: unityShowBanner,
+      };
 
       // By default, Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
