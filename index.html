@@ -55,18 +55,22 @@
         updateBannerVisibility();
       }
 
+      var version = "0.0.18";
+      var versionQuery = "?v=" + version;
+
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/AimDevBuild.loader.js";
+      var loaderUrl = buildUrl + "/AimDevBuild.loader.js" + versionQuery;
+
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/AimDevBuild.data",
-        frameworkUrl: buildUrl + "/AimDevBuild.framework.js",
-        codeUrl: buildUrl + "/AimDevBuild.wasm",
+        dataUrl: buildUrl + "/AimDevBuild.data" + versionQuery,
+        frameworkUrl: buildUrl + "/AimDevBuild.framework.js" + versionQuery,
+        codeUrl: buildUrl + "/AimDevBuild.wasm" + versionQuery,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "stVALVe",
         productName: "Aim",
-        productVersion: "0.0.18",
-        showBanner: unityShowBanner,
+        productVersion: version,
+        showBanner: unityShowBanner
       };
 
       // By default Unity keeps WebGL canvas render target size matched with
