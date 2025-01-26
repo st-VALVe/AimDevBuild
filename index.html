@@ -12,6 +12,7 @@
     <div id="unity-container">
       <canvas id="unity-canvas" width=600 height=960 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
@@ -55,21 +56,18 @@
         updateBannerVisibility();
       }
 
-      var version = "0.0.21";
-      var versionQuery = "?v=" + version;
-
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/AimDevBuild.loader.js" + versionQuery;
-
+      var loaderUrl = buildUrl + "/AimDevBuild.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/AimDevBuild.data" + versionQuery,
-        frameworkUrl: buildUrl + "/AimDevBuild.framework.js" + versionQuery,
-        codeUrl: buildUrl + "/AimDevBuild.wasm" + versionQuery,
+        dataUrl: buildUrl + "/AimDevBuild.data",
+        frameworkUrl: buildUrl + "/AimDevBuild.framework.js",
+        codeUrl: buildUrl + "/AimDevBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "stVALVe",
         productName: "Aim",
-        productVersion: version
+        productVersion: "0.0.22",
+        showBanner: unityShowBanner,
       };
 
       // By default Unity keeps WebGL canvas render target size matched with
