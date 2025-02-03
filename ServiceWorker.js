@@ -1,4 +1,4 @@
-const cacheName = "stVALVe-Aim-0.0.23";
+const cacheName = "stVALVe-Aim-0.0.25";
 const contentToCache = [
     "Build/AimDevBuild.loader.js",
     "Build/AimDevBuild.framework.js",
