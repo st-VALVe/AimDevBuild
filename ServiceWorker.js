@@ -1,9 +1,9 @@
-const cacheName = "stVALVe-Aim-0.0.23";
+const cacheName = "stVALVe-Aim-0.0.24";
 const contentToCache = [
-    "Build/AimDevBuild.loader.js",
-    "Build/AimDevBuild.framework.js",
-    "Build/AimDevBuild.data",
-    "Build/AimDevBuild.wasm",
+    "Build/69bef21f302c3703497876158e993b94.loader.js",
+    "Build/ee61ee48659af63acec7f4b12d228b87.framework.js.unityweb",
+    "Build/2e89b88ad358e93aacbec83934bc4834.data.unityweb",
+    "Build/1bfeaa375ad6c40416fc34f05e08eba9.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
